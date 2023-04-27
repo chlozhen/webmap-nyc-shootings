@@ -1,3 +1,4 @@
+/* Styling for full body/container */
 html,
 head,
 #main-container {
@@ -26,12 +27,13 @@ body * {
     user-select: none;
 }
 
+/* Styling for top navigation bar */
 nav {
     padding: 1rem;
-    border-bottom: 1px solid #e6cacd;
+    border-bottom: 1px solid #8c2d04;
     display: flex;
     z-index: 10;
-    background: #e6cacd;
+    background: #8c2d04;
 }
 
 .nav-links {
@@ -45,25 +47,19 @@ nav {
     font-size: .9rem;
 }
 
-.map {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-}
-
+/* Styling for All content under navigation */
 #content-container {
     flex-grow: 1;
     display: flex;
     min-height: 0;
 }
 
-#sidebar {
-    width: 350px;
-    padding: 1rem;
-    font-size: 0.9rem;
-    overflow-y: scroll;
-    box-sizing: border-box;
+/* Styling for map */
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 #comparison-container {
@@ -73,13 +69,103 @@ nav {
     height: 100%;
 }
 
+/* Styling for side bar */
+#sidebar {
+    width: 350px;
+    height: 800px;
+    padding: 1rem;
+    font-size: 0.9rem;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
 .title {
     font-size: 20px;
     font-weight: 700;
-    color: #000000;
+    color: #feedde;
 }
 
-@media only screen and (max-width: 800px) {
+
+/* https://www.w3schools.com/howto/howto_css_dropdown.asp */
+/* Styling for dropdown menus */
+.dropdown {
+    display: inline-block;
+    background-color: #d94801;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    background-color: inherit;
+    color: #fee6ce;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styling for stats tables */
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fee6ce;
+    margin-top: 8px;
+    padding: 10px;
+    overflow: scroll;
+
+}
+.stats_title {
+    /* display: inline-block; */
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000;
+    
+}
+
+.stats_sub_title {
+    /* display: inline-block; */
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8c2d04;
+    
+}
+
+
+/* Styling pop up description table*/
+.mapboxgl-popup-content {
+    display: inline-block;
+    background-color: #fee6ce;
+}
+
+/* Styling for tables */
+.key-value-table {
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+}
+
+.key-value-table td {
+    padding: 2px 8px;
+    border: 1px solid #fee6ce;
+    background-color: #fdd0a2;
+}
+
+.key-value-table td.key {
+    font-weight: bold;
+    color: #444;
+    background-color: #fdae6b;
+}
+
+.key-value-table td.value {
+    color: #0a0808;
+}
+
+
+
+/* @media only screen and (max-width: 800px) {
     #content-container {
         flex-direction: column-reverse;
     }
@@ -92,4 +178,4 @@ nav {
     #sidebar {
         width: 100%;
     }
-}
+} */
