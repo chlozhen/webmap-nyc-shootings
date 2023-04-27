@@ -26,17 +26,6 @@ const map = new mapboxgl.Compare(beforeMap, afterMap, container, {
     // mousemove: true
 });
 
-// Add navigation features
-
-// add the geocoder
-afterMap.addControl(
-    new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl,
-        zoom: 13
-    })
-);
-
 // add navigation controls
 beforeMap.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 afterMap.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
