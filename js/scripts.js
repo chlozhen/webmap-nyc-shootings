@@ -27,20 +27,20 @@ const map = new mapboxgl.Compare(beforeMap, afterMap, container, {
 });
 
 // Add navigation features
-// const search_bar = new MapboxGeocoder({
-//     accessToken: mapboxgl.accessToken,
-//     mapboxgl: mapboxgl,
-//     zoom: 13
-// })
 
-// // add the geocoder
-// beforeMap.addControl(
-//     search_bar
-// );
+// add the geocoder
+afterMap.addControl(
+    new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        zoom: 13
+    })
+);
 
 // add navigation controls
 beforeMap.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
 afterMap.addControl(new mapboxgl.NavigationControl(), 'bottom-left');
+
 
 // function to load before and after maps
 function loadMap(map, year) {

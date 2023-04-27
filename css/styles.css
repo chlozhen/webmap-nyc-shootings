@@ -57,9 +57,9 @@ nav {
 /* Styling for map */
 .map {
     position: absolute;
-    top: 0;
+    top: 57px;
     bottom: 0;
-    width: 100%;
+    width: 75%;
 }
 
 #comparison-container {
@@ -71,7 +71,7 @@ nav {
 
 /* Styling for side bar */
 #sidebar {
-    width: 350px;
+    width: 25%;
     height: calc( 100vh - 50px );
     padding: 1rem;
     font-size: 0.9rem;
