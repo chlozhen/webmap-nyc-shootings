@@ -92,6 +92,15 @@ nav {
     display: inline-block;
     background-color: #d94801;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+#dropdown_left{
+    border-radius: 5px;
+}
+
+#dropdown_right{
+    border-radius: 5px;
 }
 
 .dropdown-content {
@@ -112,6 +121,7 @@ nav {
     margin-top: 8px;
     padding: 10px;
     overflow: scroll;
+    border-radius: 5px;
 
 }
 .stats_title {
@@ -124,7 +134,7 @@ nav {
 
 .stats_sub_title {
     /* display: inline-block; */
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 14px;
     font-weight: 600;
     color: #8c2d04;
@@ -151,16 +161,19 @@ nav {
     padding: 2px 8px;
     border: 1px solid #fee6ce;
     background-color: #fdd0a2;
+    border-radius: 5px;
 }
 
 .key-value-table td.key {
     font-weight: bold;
     color: #444;
     background-color: #fdae6b;
+    border-radius: 5px;
 }
 
 .key-value-table td.value {
     color: #0a0808;
+    border-radius: 5px;
 }
 
 
