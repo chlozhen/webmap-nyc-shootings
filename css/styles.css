@@ -175,20 +175,3 @@ nav {
     color: #0a0808;
     border-radius: 5px;
 }
-
-
-
-/* @media only screen and (max-width: 800px) {
-    #content-container {
-        flex-direction: column-reverse;
-    }
-
-    #comparison-container {
-        height: 60%;
-        flex-shrink: 0;
-    }
-
-    #sidebar {
-        width: 100%;
-    }
-} */
