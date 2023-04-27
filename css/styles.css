@@ -146,6 +146,8 @@ nav {
 .mapboxgl-popup-content {
     display: inline-block;
     background-color: #fee6ce;
+    width: 100%;
+
 }
 
 /* Styling for tables */
