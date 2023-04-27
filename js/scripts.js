@@ -153,7 +153,6 @@ function formatStatistics(table_id, year) {
         .then(response => response.json())
         .then(data => {
             const stats = generateStatistics(data, year);
-            console.log(stats.boroPercentages)
             var stats_txt = `
               <tr>
                   <td class="key">Year</td>
@@ -209,8 +208,16 @@ loadDropdownMenus(dropdown_right)
 function onYearSelected(side) {
     var dropdown = document.getElementById("dropdown_" + side);
     var selectedYear = dropdown.options[dropdown.selectedIndex].value;
-    // console.log("Selected year on " + side + " side: " + selectedYear);
-
+    
+    // handle case if user chooses "Left Map" or "Right Map"
+    if (dropdown.selectedIndex == 0){
+        if (side == "left"){
+            selectedYear = 2006
+        }else{
+            selectedYear = 2021
+        }
+    }
+    // update the corresponding map and table based on selected year
     if (side == "left") {
         beforeMap.setFilter(main_layer_id, null);
         beforeMap.setFilter(main_layer_id, ['==', ['get', 'YEAR'], parseInt(selectedYear)])
