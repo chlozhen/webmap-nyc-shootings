@@ -1,6 +1,6 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY2hsb3poZW4iLCJhIjoiY2xnNXFlMGkxMDF0YzNobjBzeDZ3dTRodyJ9.aEmIpsNVZeh27U2L1z7j_A';
 
-const NY_STATE = [-74.00582689446452, 40.69493697556761]
+const NY_STATE = [-73.96484737390125, 40.713663257627694]
 const main_layer_id = 'Gun Violence Incident'
 const data_file = './data/gun-violence-nyc-06-22.geojson'
 const default_left_year = 2006
@@ -12,13 +12,13 @@ const beforeMap = new mapboxgl.Map({
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
     style: 'mapbox://styles/mapbox/dark-v11',
     center: NY_STATE,
-    zoom: 11
+    zoom: 10
 });
 const afterMap = new mapboxgl.Map({
     container: 'after',
     style: 'mapbox://styles/mapbox/dark-v11',
     center: NY_STATE,
-    zoom: 11
+    zoom: 10
 });
 const container = '#comparison-container';
 const map = new mapboxgl.Compare(beforeMap, afterMap, container, {

@@ -147,6 +147,7 @@ nav {
     display: inline-block;
     background-color: #fee6ce;
     width: 100%;
+    overflow: scroll;
 
 }
 
