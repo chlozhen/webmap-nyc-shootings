@@ -4,6 +4,7 @@
 Webmap: https://chlozhen.github.io/webmap-nyc-shootings/
 
 Data: 2 datasets, cleaned and combined using manual_clean_data.ipynb
+
 NOTE: data was used at the time of download on April 27th, 2023 - data may have been updated.
 * [Historical NYPD Data](https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Historic-/833y-fsy8)
 * [Current NYPD Data](https://data.cityofnewyork.us/Public-Safety/NYPD-Shooting-Incident-Data-Year-To-Date-/5ucz-vwe8)
